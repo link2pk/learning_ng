@@ -1,0 +1,19 @@
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3">
+
+
+		<pre>Model: {{selected | json}}</pre>
+
+		<input type="text" ng-model="selected" typeahead-on-select="setPcode($item)" uib-typeahead="obj.name for obj in result | filter:$viewValue | limitTo:8" class="form-control">
+		<br>
+
+
+		<br>
+		<a href="#/forecast" class="btn btn-primary">Get Details</a>
+		<hr>
+		
+
+
+
+	</div>
+</div>
